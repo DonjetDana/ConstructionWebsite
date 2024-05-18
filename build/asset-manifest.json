@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.fcbfffa0.css",
-    "main.js": "/static/js/main.cf641a87.js",
+    "main.js": "/static/js/main.60406fd0.js",
     "static/js/453.067d0a6e.chunk.js": "/static/js/453.067d0a6e.chunk.js",
     "static/media/services-1.png": "/static/media/services-1.ca38d4eb2a7dd4b657e5.png",
     "static/media/consultingStudies.png": "/static/media/consultingStudies.6ea3ce2cffff7fc92dcd.png",
@@ -20,16 +20,25 @@
     "static/media/WohnDesign2.jpeg": "/static/media/WohnDesign2.bab32eab22920ee39c74.jpeg",
     "static/media/Edma-Gmbh2.jpeg": "/static/media/Edma-Gmbh2.a498bbce36aa96193582.jpeg",
     "static/media/Edma-Gmbh1.jpeg": "/static/media/Edma-Gmbh1.690403f04c4db9e1fe3f.jpeg",
-    "static/media/logo.jpeg": "/static/media/logo.d07cc8a6c88302d2c5a2.jpeg",
+    "static/media/7.-QKUK.png": "/static/media/7.-QKUK.35ad9096ee26b404fa28.png",
+    "static/media/3.-MINISTRIA-E-ADMINISTRATES-PUBLIKE.png": "/static/media/3.-MINISTRIA-E-ADMINISTRATES-PUBLIKE.0b9c4a4a6b89bc7b7258.png",
+    "static/media/11.-KOMUNA-E-PRISHTINES.png": "/static/media/11.-KOMUNA-E-PRISHTINES.ef156c1987a000da9e7b.png",
+    "static/media/13.-UNIVERSITETI-I-PRISHTINES.png": "/static/media/13.-UNIVERSITETI-I-PRISHTINES.697a69908839ee08d15a.png",
     "static/media/1.-IRCON.png": "/static/media/1.-IRCON.8362cdebf364f1c26bb8.png",
+    "static/media/12.-KRU-PRISHTINA.png": "/static/media/12.-KRU-PRISHTINA.9762a4c7850faa09ca41.png",
+    "static/media/5.-POPPINS.png": "/static/media/5.-POPPINS.ae2622060d1df7a7b099.png",
+    "static/media/4.-CZECH-DEVELOPMENT-AGENCY.png": "/static/media/4.-CZECH-DEVELOPMENT-AGENCY.e927859a019934cf94b6.png",
+    "static/media/6.-AMABASADA-E-CEKISE.png": "/static/media/6.-AMABASADA-E-CEKISE.776153cc0e250b6372a8.png",
+    "static/media/2.-TOPOL-WATER.png": "/static/media/2.-TOPOL-WATER.71789c2fa70a210a8175.png",
     "static/media/consultingStudiesSingle.png": "/static/media/consultingStudiesSingle.f0901639f7361202a9ee.png",
+    "static/media/24.-IBER-LEPENCI.png": "/static/media/24.-IBER-LEPENCI.0d797da92266aafea69c.png",
     "index.html": "/index.html",
     "main.fcbfffa0.css.map": "/static/css/main.fcbfffa0.css.map",
-    "main.cf641a87.js.map": "/static/js/main.cf641a87.js.map",
+    "main.60406fd0.js.map": "/static/js/main.60406fd0.js.map",
     "453.067d0a6e.chunk.js.map": "/static/js/453.067d0a6e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fcbfffa0.css",
-    "static/js/main.cf641a87.js"
+    "static/js/main.60406fd0.js"
   ]
 }

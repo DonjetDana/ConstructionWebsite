@@ -1,8 +1,20 @@
 import React, { useEffect, useState } from 'react';
-import { Box } from '@mui/material';
+import { Box, keyframes } from '@mui/material';
 import logo from '../assets/projectSupervision.png'; // Importo imazhin për ngarkimin
 import LoaderSlider from './LoaderSlider';
 
+const preloaderFade = keyframes`
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+
+`
 const AppLoader = ({ children }) => {
     const [isLoading, setIsLoading] = useState(true);
 
@@ -27,15 +39,15 @@ const AppLoader = ({ children }) => {
                             left: 0,
                             width: '100%',
                             height: '100%',
-                            backgroundColor: 'rgba(0, 0, 0, 0.8)', // Ngjyra e sfondit tërësor
+                            backgroundColor: 'rgba(0, 0, 0, 0.8)', 
                             display: 'flex',
                             justifyContent: 'center',
                             alignItems: 'center',
-                            transition: 'opacity 1000ms ease-in-out', // Animacioni për kalimin e 1000 ms
-                            opacity: 1, // Nis nga një gjendje e dukshme
+                            transition: 'opacity 1000ms ease-in-out', 
+                            animation: `${preloaderFade} 1000ms linear infinit` 
                         }}
                     >
-                        <img src={logo} alt="Loading" width="250px" height="100px" />
+                        <img src={logo} alt="Loading" width="160px" height="50px" />
                     </Box>
                 </Box>
             ) : (

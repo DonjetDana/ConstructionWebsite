@@ -62,7 +62,7 @@ const Footer = () => {
                             <LogoSize>
                                 <img src={logo} alt={logo} />
                                 <Box sx={{ color: "#ebebeb"}}>
-                                    <Typography>Addresse: Täfernstrasse 2a 5405 Dättwil</Typography>
+                                    <Typography>Address: Täfernstrasse 2a 5405 Dättwil</Typography>
                                     <Typography>Tel: 079 586 00 92</Typography>
                                     <Typography>Tel: 044 593 54 11</Typography>
                                     <Typography>Email: edma@gmx.ch</Typography>

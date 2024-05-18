@@ -1,6 +1,6 @@
 import { Box, Container, Grid, Typography } from '@mui/material'
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
@@ -8,7 +8,6 @@ import { Link } from 'react-router-dom';
 
 const ProjectSpecification = styled.p`
         font-size: 16px;
-        text-align: justify;
         line-height: 2.3;
     `
 
@@ -18,14 +17,7 @@ const ProjectSpecificationTitle = styled.h4`
         font-weight: 400;
         line-height: 1.2;
     `
-const growBorder = keyframes`
-        0% {
-            width: 55%;
-        }
-        100% {
-            width: 100%
-        }
-    `
+
 const BorderBottom = styled.p`
         position: relative;
         padding-bottom: 5px;

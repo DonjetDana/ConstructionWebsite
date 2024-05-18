@@ -15,7 +15,7 @@ const projectData = {
             title:'Spot-tec Immobilien AG',
             secondTitle:'Spot-tec Immobilien AG',
             specData: {
-                specificationTitles: ['STANDORT:','ARCHITECT:','GU:', 'JAHR:',],
+                specificationTitles: ['LOCATION:','ARCHITECT:','GENERAL CONTRACOR:', 'YEAR:',],
                 specifications: ['5610 Wohlen AG','Iuliano Baumanagement GmbH:','EDMA GmbH','2018',],
             },
             arrowLeft: false,
@@ -27,7 +27,7 @@ const projectData = {
             title:'EDMA GmbH',
             secondTitle: '',
             specData: {
-                specificationTitles:['STANDORT:','Auftraggeber/TU:','JAHR:'] ,
+                specificationTitles:['LOCATION:','GENERAL CONTRACOR:','YEAR:'] ,
                 specifications:['5612 Villmergen','EDMA GmbH','2017'] ,
             },
             arrowLeft: true,
@@ -36,9 +36,9 @@ const projectData = {
         },{
             images: [WohnDesign1,WohnDesign2,WohnDesign3],
             title:'Wohndesign',
-            secondTitle: '„Wohndesign: Eine Reise durch architektonische Exzellenz“',
+            secondTitle: '„Wohndesign: A Journey Through Architectural Excellence“',
             specData: {
-                specificationTitles:['STANDORT:','Auftraggeber/TU:','JAHR:'] ,
+                specificationTitles:['LOCATION:','GENERAL CONTRACOR:','YEAR:'] ,
                 specifications:['Wohlen AG','EDMA GmbH','2019'] ,
             },
             arrowLeft: true,

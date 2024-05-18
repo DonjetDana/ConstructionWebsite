@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import logo from "../../assets/logo.jpeg";
+import logo from "../../assets/logo-nobg.png";
 import { Link, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 import MenuIcon from '@mui/icons-material/Menu';
-import { Box, IconButton } from '@mui/material';
+import {  IconButton } from '@mui/material';
 import { Container } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 
@@ -71,7 +71,7 @@ const UnorderedList = styled.ul`
 const StyledLink = styled(Link)`
   text-decoration: none;
   color: #003d6d;
-  padding: 26px 22px;
+  padding: 15px 22px;
   
   &:visited {
     color: #003d6d;

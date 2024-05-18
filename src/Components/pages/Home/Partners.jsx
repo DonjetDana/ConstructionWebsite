@@ -2,6 +2,16 @@ import { Box, Container, Grid } from '@mui/material'
 import React from 'react'
 import { Link } from 'react-router-dom';
 import IRCON from "../../../assets/1.-IRCON.png";
+import ministria from "../../../assets/3.-MINISTRIA-E-ADMINISTRATES-PUBLIKE.png";
+import Komuna from "../../../assets/11.-KOMUNA-E-PRISHTINES.png";
+import czechRepublic from "../../../assets/4.-CZECH-DEVELOPMENT-AGENCY.png";
+import topalWater from "../../../assets/2.-TOPOL-WATER.png";
+import poppins from "../../../assets/5.-POPPINS.png";
+import ministriaCekise from "../../../assets/6.-AMABASADA-E-CEKISE.png";
+import universitetiPr from "../../../assets/13.-UNIVERSITETI-I-PRISHTINES.png";
+import qkuk from "../../../assets/7.-QKUK.png";
+import ujesjellesi from "../../../assets/12.-KRU-PRISHTINA.png";
+import iberLepenci from "../../../assets/24.-IBER-LEPENCI.png"
 import styled from 'styled-components';
 
 const images = [
@@ -10,34 +20,34 @@ const images = [
         image:IRCON
     },{
         id:2,
-        image:IRCON
+        image:ministria
     },{
         id:3,
-        image:IRCON
+        image:Komuna
     },{
         id:4,
-        image:IRCON
+        image:czechRepublic
     },{
         id:5,
-        image:IRCON
+        image:topalWater
     },{
         id:6,
-        image:IRCON
+        image:poppins
     },{
         id:7,
-        image:IRCON
+        image:ministriaCekise
     },{
         id:8,
-        image:IRCON
+        image:universitetiPr
     },{
         id:9,
-        image:IRCON
+        image:qkuk
     },{
         id:10,
-        image:IRCON
+        image:ujesjellesi
     },{
         id:11,
-        image:IRCON
+        image:iberLepenci
     },
 
 ]
