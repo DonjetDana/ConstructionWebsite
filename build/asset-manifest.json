@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c35e8b0e.css",
+    "main.js": "/static/js/main.f860ef49.js",
+    "static/js/453.067d0a6e.chunk.js": "/static/js/453.067d0a6e.chunk.js",
+    "static/media/services-1.png": "/static/media/services-1.ca38d4eb2a7dd4b657e5.png",
+    "static/media/consultingStudies.png": "/static/media/consultingStudies.6ea3ce2cffff7fc92dcd.png",
+    "static/media/logo-nobg.png": "/static/media/logo-nobg.08060ece73e9314d48a9.png",
+    "static/media/projectSupervision.png": "/static/media/projectSupervision.08060ece73e9314d48a9.png",
+    "static/media/phantom4.jpeg": "/static/media/phantom4.5b3a19b47258e361996a.jpeg",
+    "static/media/blog-01-1.jpg": "/static/media/blog-01-1.7216041ff55b1423249f.jpg",
+    "static/media/logo.jpeg": "/static/media/logo.d07cc8a6c88302d2c5a2.jpeg",
+    "static/media/1.-IRCON.png": "/static/media/1.-IRCON.8362cdebf364f1c26bb8.png",
+    "static/media/consultingStudiesSingle.png": "/static/media/consultingStudiesSingle.f0901639f7361202a9ee.png",
+    "index.html": "/index.html",
+    "main.c35e8b0e.css.map": "/static/css/main.c35e8b0e.css.map",
+    "main.f860ef49.js.map": "/static/js/main.f860ef49.js.map",
+    "453.067d0a6e.chunk.js.map": "/static/js/453.067d0a6e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c35e8b0e.css",
+    "static/js/main.f860ef49.js"
+  ]
+}
