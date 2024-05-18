@@ -1,7 +1,8 @@
 import { Box, Container, Grid, Typography } from '@mui/material'
 import React from 'react'
-import GoogleMap from '../GoogleMap'
-import styled from 'styled-components'
+import GoogleMap from '../../GoogleMap';
+import styled from 'styled-components';
+import "./contact.scss";
 
 
 const TextAreaStyle = styled.div`
@@ -33,7 +34,6 @@ const ContactInput = styled.div`
         background-color: #eeeeee;
         padding: 17px 20px;
         color: #333;
-        margin-bottom: 20px;
         border: 0px;
         width: 100%;
     }`
@@ -69,8 +69,10 @@ const ContactComponent = () => {
                             display: "flex", justifyContent: { md: "flex-start", xs: "center" }, alignItems: "center"
                         }}>
                         <Grid item lg={4} md={4} sm={12} mb="20px">
-                            <Box sx={{display: "flex",justifyContent:{sm : "space-evenly",md:"flex-start"},
-                            flexDirection: "column",width:"100%", textAlign: { sm: "center", md: "left"}}}>
+                            <Box sx={{
+                                display: "flex", justifyContent: { sm: "space-evenly", md: "flex-start" },
+                                flexDirection: "column", width: "100%", textAlign: { sm: "center", md: "left" }
+                            }}>
                                 <Box>
                                     <Typography sx={{
                                         fontSize: "1.125rem", textTransform: "uppercase",
@@ -108,9 +110,24 @@ const ContactComponent = () => {
                                         justifyContent: { xs: "center", lg: "flex-start", alignItems: "center" }
                                     }}>
                                         <ContactInput>
-                                            <input type="text" placeholder='Surname' required />
-                                            <input type="text" placeholder='Surname' required />
-                                            <input type="text" placeholder='Surname' required />
+                                            <div className="wrap-input-9">
+                                                <input className="input" type="text" placeholder="Name" required/>
+                                                    <span className="focus-border">
+                                                        <i></i>
+                                                    </span>
+                                            </div>
+                                            <div className="wrap-input-9">
+                                                <input className="input" type="text" placeholder="Email" required/>
+                                                    <span className="focus-border">
+                                                        <i></i>
+                                                    </span>
+                                            </div>
+                                            <div className="wrap-input-9">
+                                                <input className="input" type="text" placeholder="Telephone" required/>
+                                                    <span className="focus-border">
+                                                        <i></i>
+                                                    </span>
+                                            </div>
                                         </ContactInput>
                                     </Grid>
                                     <Grid item md={6} sm={6} xs={12}>

@@ -6,11 +6,13 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ProjectPage from './pages/ProjectPage';
 import ContactPage from './pages/ContactPage';
-import BussinesComponent from './Components/pages/BussinesSelector/BussinesComponent';
+import BussinesComponent from './Components/pages/Bussines/BussinesComponent';
 import ServicesComponent from './Components/pages/Services/ServicesComponent';
-import data from "./Components/pages/Services/ServiceData"
+import data from "./Components/pages/Services/ServiceData";
+import projectData from "./Components/pages/ProjectComponents/ProjectData";
 import AppLoader from './Components/AppLoader';
 import { useEffect, useState } from 'react';
+import ProjectComponent from './Components/pages/ProjectComponents/ProjectComponent';
 
 
 const LoaderWrapper = ({ children }) => {
@@ -42,6 +44,40 @@ function App() {
             <Route path='/' element={<HomePage />} />
             <Route path='/about' element={<AboutPage />} />
             <Route path="/projects" element={<ProjectPage />} />
+            <Route path="/projects/spot-tec" element={
+              <ProjectComponent
+                title={projectData.data[0].title}
+                secondtitle={projectData.data[0].secondTitle}
+                images={projectData.data[0].images}
+                specData={projectData.data[0].specData}
+                arrowLeft={projectData.data[0].arrowLeft}
+                arrowRight={projectData.data[0].arrowRight}
+                paths={projectData.data[0].paths} 
+              />
+            } />
+
+            <Route path="/projects/edma-gmbh" element={
+            <ProjectComponent 
+              title={projectData.data[1].title}
+              secondtitle={projectData.data[1].secondTitle}
+              images={projectData.data[1].images}
+              specData={projectData.data[1].specData}
+              arrowLeft={projectData.data[1].arrowLeft}
+              arrowRight={projectData.data[1].arrowRight}
+              paths={projectData.data[1].paths} 
+            />
+            }/>
+            <Route path="/projects/wohndesign" element={
+            <ProjectComponent 
+              title={projectData.data[2].title}
+              secondtitle={projectData.data[2].secondTitle}
+              images={projectData.data[2].images}
+              specData={projectData.data[2].specData}
+              arrowLeft={projectData.data[2].arrowLeft}
+              arrowRight={projectData.data[2].arrowRight}
+              paths={projectData.data[2].paths} 
+            />
+            }/>
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/architecture" element={<BussinesComponent title="Architecture" content={architectureContent} />} />
 

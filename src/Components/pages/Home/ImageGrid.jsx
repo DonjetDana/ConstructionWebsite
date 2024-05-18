@@ -1,8 +1,10 @@
 import { Box, Container, Grid } from '@mui/material'
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Phantom4 from "../../../assets/phantom4.jpeg"
-import styled,{ keyframes } from 'styled-components';
+import Phantom4 from "../../../assets/phantom4.jpeg";
+import WohnDesign from "../../../assets/wohedesign.jpeg";
+import SpotTec from "../../../assets/Spot-Tec.jpeg"
+import styled, { keyframes } from 'styled-components';
 
 
 
@@ -102,24 +104,23 @@ const ImageGrid = () => {
     return (
         <Box mb="100px">
             <Container>
-                <Grid container spacing={3} sx={{ flexDirection: { xs: "column", md: "row" }, display: "flex", justifyContent: { md:"flex-start", lg:"center"}, alignItems: "center" }}>
+                <Grid container spacing={3} sx={{ flexDirection: { xs: "column", md: "row" }, display: "flex", justifyContent: { md: "flex-start", lg: "center" }, alignItems: "center" }}>
                     <Grid item xs={12} lg={4} md={6} >
-                        <Link>
+                        <Link to="/projects/wohndesign">
                             <ImageHover>
                                 <Box sx={{ position: "relative" }}>
-                                    <img src={Phantom4} alt="Phantom4" width={350} />
+                                    <img src={WohnDesign} alt="Phantom4" width={350} />
                                 </Box>
                                 <span className='line active'></span>
                                 <span className='line line-bottom'></span>
                                 <Box className='info'>
-                                    <span className='line' style={{ fontSize: "30px" }}>15</span>
-                                    <span className='line'>years of experience</span>
+                                    <span className='line' style={{ fontSize: "30px" }}>WOHNDESIGN</span>
                                 </Box>
                             </ImageHover>
                         </Link>
                     </Grid>
                     <Grid item xs={12} lg={4} md={6}>
-                        <Link>
+                        <Link to="/projects/edma-gmbh">
                             <ImageHover>
                                 <Box sx={{ position: "relative" }}>
                                     <img src={Phantom4} alt="Phantom4" width={350} />
@@ -127,23 +128,21 @@ const ImageGrid = () => {
                                 <span className='line active'></span>
                                 <span className='line line-bottom'></span>
                                 <Box className='info'>
-                                    <span className='line' style={{ fontSize: "30px" }}>15</span>
-                                    <span className='line'>years of experience</span>
+                                    <span className='line' style={{ fontSize: "30px" }}>EDMA GMBH</span>
                                 </Box>
                             </ImageHover>
                         </Link>
                     </Grid>
                     <Grid item xs={12} lg={4} md={6}>
-                        <Link>
+                        <Link to="/projects/spot-tex">
                             <ImageHover>
                                 <Box sx={{ position: "relative" }}>
-                                    <img src={Phantom4} alt="Phantom4" width={350} />
+                                    <img src={SpotTec} alt="Phantom4" width={350} />
                                 </Box>
                                 <span className='line active'></span>
                                 <span className='line line-bottom'></span>
                                 <Box className='info'>
-                                    <span className='line' style={{ fontSize: "30px" }}>15</span>
-                                    <span className='line'>years of experience</span>
+                                    <span className='line' style={{ fontSize: "30px" }}>SPOT-TEC <br /> IMMOBILIEN AG</span>
                                 </Box>
                             </ImageHover>
                         </Link>
