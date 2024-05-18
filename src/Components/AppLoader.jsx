@@ -35,7 +35,7 @@ const AppLoader = ({ children }) => {
                             opacity: 1, // Nis nga një gjendje e dukshme
                         }}
                     >
-                        <img src={logo} alt="Loading" width="250px" height="150px" />
+                        <img src={logo} alt="Loading" width="250px" height="100px" />
                     </Box>
                 </Box>
             ) : (

@@ -80,13 +80,13 @@ const Footer = () => {
                                         <StyledLinks to="/">Home</StyledLinks>
                                     </StyledItem>
                                     <StyledItem>
-                                        <StyledLinks to="/">Home</StyledLinks>
+                                        <StyledLinks to="/about">About</StyledLinks>
                                     </StyledItem>
                                     <StyledItem>
-                                        <StyledLinks to="/">Home</StyledLinks>
+                                        <StyledLinks to="/projects">Projects</StyledLinks>
                                     </StyledItem>
                                     <StyledItem>
-                                        <StyledLinks to="/">Home</StyledLinks>
+                                        <StyledLinks to="/contact">Contact</StyledLinks>
                                     </StyledItem>
                                 </StyledUl>
                             </Box>

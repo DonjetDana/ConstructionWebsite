@@ -20,10 +20,10 @@ const LoaderSlider = () => {
         position: 'fixed',
         top: 0,
         left: 0,
-        width: `${progress}%`, // Shkalla e përparimit
+        width: `${progress}%`,
         height: '4px',
-        backgroundColor: 'red', // Ngjyra e slider-it
-        transition: 'width 1000ms ease-in-out', // Animacioni për lëvizjen
+        backgroundColor: '#db1d33',
+        transition: 'width 1000ms ease-in-out',
         zIndex: 9999,
       }}
     />

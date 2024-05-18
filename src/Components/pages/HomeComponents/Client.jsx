@@ -4,6 +4,8 @@ import logo from "../../../assets/blog-01-1.jpg"
 import styled from 'styled-components';
 import "./Client.scss";
 
+
+
 const ClientImage = styled.div`
     position: relative;
     width: 100%;
@@ -16,9 +18,8 @@ const ClientImage = styled.div`
         height: 100%;
         background-color: rgba(0, 0, 0, 0.4);
         position: absolute;
-        left: 0;
         top: 0;
-        padding: 0px;
+        left: 0;
     }
 
 `
@@ -45,12 +46,12 @@ const Client = () => {
 
                             <Box sx={{ maxWidth: "100%", maxHeight: "100%" }}>
                                 <span className='line active'></span>
-                                <span className='line line-bottom'></span>
+                                <span className='line-2 line-bottom'></span>
                             </Box>
                             <Box sx={{position: "absolute",display: "flex",flexDirection: "column",zIndex: "2",
-                                top: "40%",left: {xs: "30%",sm:"40%",md:"40%"},color: "white",textAlign: "center",}}>
-                                <span className='line'>15</span>
-                                <span className='line'>years of experience</span>
+                                top: "40%",left: {xs: "30%",sm:"40%",md:"40%"},color: "white",textAlign: "center"}}>
+                                <span className='text'>15</span>
+                                <span className='text'>years of experience</span>
                             </Box>
                         </ClientImage>
                         {/* </Box> */}

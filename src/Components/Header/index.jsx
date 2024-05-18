@@ -1,21 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import logo from "../../assets/logo.jpeg";
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Box, IconButton } from '@mui/material';
 import { Container } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCaretDown, faCaretUp } from '@fortawesome/free-solid-svg-icons';
+
 import "./header.scss";
+import MobileMenu from './MobileMenu';
 
 
 const HeaderStyle = styled.div`
   width: 100%;
   box-shadow: ${({ isScrolled }) => (isScrolled ? '0 1px 3px 0 rgba(127,202,236,.8)' : 'none')}; ;
   background: rgba(255,255,255,.95);
-  position: ${({ isScrolled }) => (isScrolled ? 'fixed' : 'static')};
+  position: ${({ isScrolled }) => (isScrolled ? 'fixed' :  'static')};
   top: 0;
   left: 0;
   right: 0;
@@ -66,42 +66,7 @@ const UnorderedList = styled.ul`
     align-items: center;
 `
 
-const MobileUl = styled.ul`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #f8f8f8;
-    margin-bottom: 20px;
-`
 
-const BussServMobMenu = styled.ul`
-    display: flex;
-    flex-direction: column;
-    background: #f8f8f8;
-    margin-left: 20px;
-`
-
-const SecondList = styled.li`
-  list-style: none;
-  width: 100%;
-  padding: 10px 25px 10px 15px;
-  border-bottom: 1px solid #e6e6e6;
-
-  & a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #003d6d;
-    font-size: 13px;
-    position: relative;
-  }
-`
-
-
-const Column = styled.div`
-flex-direction: column;
-width: 100%;
-`
 
 const StyledLink = styled(Link)`
   text-decoration: none;
@@ -146,21 +111,11 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isHoveredBusiness, setIsHoveredBusiness] = useState(false);
   const [isHoveredServices, setIsHoveredServices] = useState(false);
-  const [isClickedBussines, setIsClickedBussines] = useState(false);
-  const [isClickedService, setIsClickedService] = useState(false);
+  const location = useLocation();
+ 
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
-    const menuElement = document.getElementById('menu');
-    const body = document.body;
-    if (menuElement) {
-      menuElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      if (isMobileMenuOpen) {
-        body.classList.remove('no-scroll');
-      } else {
-        body.classList.add('no-scroll');
-      }
-    }
   };
   
 
@@ -185,16 +140,15 @@ const Header = () => {
     };
   }, []);
 
+
   useEffect(() => {
-    if (isMobileMenuOpen) {
-      document.body.classList.add('no-scroll');
-    } else {
-      document.body.classList.remove('no-scroll');
-    }
-  }, [isMobileMenuOpen]);
+    setIsMobileMenuOpen(false);
+  }, [location]);
+
+  const mobileStaticMenu = isMobile ? false : isScrolled;
 
   return (
-    <HeaderStyle isScrolled={isScrolled} sx={{ background: "#ffffff", position: "static" }}>
+    <HeaderStyle isScrolled={mobileStaticMenu} sx={{ background: "#ffffff", position: "static" }}>
       <Container xs="md">
         <SpaceBetween>
           <LogoSize className='logo'>
@@ -214,7 +168,7 @@ const Header = () => {
                   <StyledLink onMouseEnter={() => setIsHoveredBusiness(true)} onMouseLeave={() => setIsHoveredBusiness(false)}>
                     Bussines Selector
                     <BussinesServiceList isHovered={isHoveredBusiness}>
-                      <List><Link to="/architecture">Die Architecture</Link></List>
+                      <List><Link to="/architecture">Architecture</Link></List>
                       <List><Link to="/3-3-energy-effiency-renewable-energy">Energy Efficiency and Renewable Energy</Link></List>
                       <List><Link to="/3-4-water-infrastructure">Water & Infrastructure</Link></List>
                     </BussinesServiceList>
@@ -239,52 +193,7 @@ const Header = () => {
         </SpaceBetween>
       </Container>
       {isMobileMenuOpen && (
-        <Container>
-          <MobileUl id="menu">
-            <Column>
-              <SecondList><Link to="/">Home</Link></SecondList>
-              <SecondList><Link to="/about">About</Link></SecondList>
-              <SecondList onClick={() => setIsClickedBussines(!isClickedBussines)}>
-                <Link to="#">
-                  <Box sx={{ display: "flex", justifyContent: "space-between" }}>
-                    Bussines Selector {isClickedBussines ? <FontAwesomeIcon icon={faCaretUp} /> : <FontAwesomeIcon icon={faCaretDown} />} 
-                  </Box>
-                  {isClickedBussines && (
-                    <Box>
-                      <BussServMobMenu>
-                        <SecondList><Link to="/consulting-and-studies">Consulting And Studies</Link></SecondList>
-                        <SecondList><Link to="/analysis-and-conceptual-design">Analysis And Conceptual Design</Link></SecondList>
-                        <SecondList><Link to="/project-supervision">Project Supervision</Link></SecondList>
-                        <SecondList><Link to="/project-managment">Project Managment</Link></SecondList>
-                        <SecondList><Link to="/construction">Construction</Link></SecondList>
-                      </BussServMobMenu>
-                    </Box>
-                  )}
-                </Link>
-              </SecondList>
-              <SecondList onClick={() => setIsClickedService(!isClickedService)}>
-                <Link to="#">
-                  <Box sx={{ display: "flex", justifyContent: "space-between" }}>
-                  Service {isClickedService ? <FontAwesomeIcon icon={faCaretUp} /> : <FontAwesomeIcon icon={faCaretDown} />} 
-                  </Box>
-                  {isClickedService && (
-                    <Box>
-                      <BussServMobMenu>
-                      <SecondList><Link to="/consulting-and-studies">Consulting And Studies</Link></SecondList>
-                      <SecondList><Link to="/analysis-and-conceptual-design">Analysis And Conceptual Design</Link></SecondList>
-                      <SecondList><Link to="/project-supervision">Project Supervision</Link></SecondList>
-                      <SecondList><Link to="/project-managment">Project Managment</Link></SecondList>
-                      <SecondList><Link to="/construction">Construction</Link></SecondList>
-                      </BussServMobMenu>
-                    </Box>
-                  )}
-                </Link>
-              </SecondList>
-              <SecondList><Link to="/projects">Projects</Link></SecondList>
-              <SecondList><Link to="/contact">Contact</Link></SecondList>
-            </Column>
-          </MobileUl>
-        </Container>
+        <MobileMenu />
       )}
     </HeaderStyle>
 

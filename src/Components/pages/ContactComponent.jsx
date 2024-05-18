@@ -46,7 +46,7 @@ const ContactComponent = () => {
                         fontSize: '36px', fontFamily: "Poppins,Arial,\"Helvetica Neue\",sans-serif",
                         textAlign: 'left', color: '#222', marginBottom: "30px"
                     }}>
-                        PROJECTS
+                        CONTACT
                     </Typography>
                 </Box>
                 <Box>
