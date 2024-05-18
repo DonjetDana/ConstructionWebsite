@@ -1,0 +1,39 @@
+.active  {
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    opacity: 1;
+    visibility: visible;
+    position: absolute;
+    width: 40%;
+    height: 60%;
+    top: 20px;
+    left: 20px;
+    margin: 10px;
+
+}
+
+.line {
+    animation: fadeIn 5s ease-in-out;
+}
+
+.line-bottom {
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    opacity: 1;
+    visibility: visible;
+    position: absolute;
+    width: 40%;
+    height: 60%;
+    bottom: 20px;
+    right: 20px;
+    margin: 10px;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+

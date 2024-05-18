@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins,Arial,"Helvetica Neue",sans-serif;
+}
+
+body {
+    font-family: Poppins,Arial,"Helvetica Neue",sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #2f64b4;
+  }
+  
+
+  
