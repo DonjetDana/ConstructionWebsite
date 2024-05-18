@@ -1,24 +1,35 @@
 {
   "files": {
-    "main.css": "/static/css/main.d2cb8e18.css",
-    "main.js": "/static/js/main.da19595d.js",
+    "main.css": "/static/css/main.fcbfffa0.css",
+    "main.js": "/static/js/main.cf641a87.js",
     "static/js/453.067d0a6e.chunk.js": "/static/js/453.067d0a6e.chunk.js",
     "static/media/services-1.png": "/static/media/services-1.ca38d4eb2a7dd4b657e5.png",
     "static/media/consultingStudies.png": "/static/media/consultingStudies.6ea3ce2cffff7fc92dcd.png",
     "static/media/logo-nobg.png": "/static/media/logo-nobg.08060ece73e9314d48a9.png",
     "static/media/projectSupervision.png": "/static/media/projectSupervision.08060ece73e9314d48a9.png",
+    "static/media/Spot-Tec-2.jpeg": "/static/media/Spot-Tec-2.5b3a19b47258e361996a.jpeg",
     "static/media/phantom4.jpeg": "/static/media/phantom4.5b3a19b47258e361996a.jpeg",
     "static/media/blog-01-1.jpg": "/static/media/blog-01-1.7216041ff55b1423249f.jpg",
+    "static/media/WohnDesign1.jpeg": "/static/media/WohnDesign1.9ec8d693488940045962.jpeg",
+    "static/media/wohedesign.jpeg": "/static/media/wohedesign.9ec8d693488940045962.jpeg",
+    "static/media/Spot-Tec-4.jpeg": "/static/media/Spot-Tec-4.adaa72fd202e87e754d6.jpeg",
+    "static/media/Spot-Tec.jpeg": "/static/media/Spot-Tec.adaa72fd202e87e754d6.jpeg",
+    "static/media/Spot-Tec-3.jpeg": "/static/media/Spot-Tec-3.e399188b0c170932ac41.jpeg",
+    "static/media/Spot-Tec-5.jpeg": "/static/media/Spot-Tec-5.3997aed54cb1925084dc.jpeg",
+    "static/media/WohnDesign3.jpeg": "/static/media/WohnDesign3.915875bfdba6dcf4f22a.jpeg",
+    "static/media/WohnDesign2.jpeg": "/static/media/WohnDesign2.bab32eab22920ee39c74.jpeg",
+    "static/media/Edma-Gmbh2.jpeg": "/static/media/Edma-Gmbh2.a498bbce36aa96193582.jpeg",
+    "static/media/Edma-Gmbh1.jpeg": "/static/media/Edma-Gmbh1.690403f04c4db9e1fe3f.jpeg",
     "static/media/logo.jpeg": "/static/media/logo.d07cc8a6c88302d2c5a2.jpeg",
     "static/media/1.-IRCON.png": "/static/media/1.-IRCON.8362cdebf364f1c26bb8.png",
     "static/media/consultingStudiesSingle.png": "/static/media/consultingStudiesSingle.f0901639f7361202a9ee.png",
     "index.html": "/index.html",
-    "main.d2cb8e18.css.map": "/static/css/main.d2cb8e18.css.map",
-    "main.da19595d.js.map": "/static/js/main.da19595d.js.map",
+    "main.fcbfffa0.css.map": "/static/css/main.fcbfffa0.css.map",
+    "main.cf641a87.js.map": "/static/js/main.cf641a87.js.map",
     "453.067d0a6e.chunk.js.map": "/static/js/453.067d0a6e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2cb8e18.css",
-    "static/js/main.da19595d.js"
+    "static/css/main.fcbfffa0.css",
+    "static/js/main.cf641a87.js"
   ]
 }
