@@ -3,8 +3,6 @@
 ![image](https://github.com/DonjetDana/ConstructionWebsite/assets/168549398/999675cb-7084-4516-8266-12e41c7302d2)
 
 
-This project is hosted at: https://donjetdana-bit.netlify.app/
-
 ## Available Scripts
 
 In the project directory, you can run:
