@@ -1,6 +1,9 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+![image](https://github.com/DonjetDana/ConstructionWebsite/assets/168549398/999675cb-7084-4516-8266-12e41c7302d2)
+
+
+This project is hosted at: https://donjetdana-bit.netlify.app/
 
 ## Available Scripts
 
